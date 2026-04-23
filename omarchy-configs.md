@@ -115,7 +115,12 @@ So I did this in `.local/share/omarchy/bin/omarchy-cmd-screensaver`
 ```
 
 # 4. Changing logo (WIP)
-Logo for when system is locked:
+Logo for disk logon screen:
+```
+/usr/share/sddm/themes/omarchy/logo.svg
+```
+
+Logo from theme (?):
 ```
 /usr/share/plymouth/themes/omarchy/logo.png
 ```
