@@ -120,12 +120,14 @@ Logo for disk logon screen:
 /usr/share/sddm/themes/omarchy/logo.svg
 ```
 
-Logo from theme (?):
+Logo main (Reboot):
 ```
 /usr/share/plymouth/themes/omarchy/logo.png
 ```
-
-
+run this to update boot image:
+```
+sudo mkinitcpio -P
+```
 
 
 
