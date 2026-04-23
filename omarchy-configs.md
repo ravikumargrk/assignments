@@ -114,6 +114,12 @@ So I did this in `.local/share/omarchy/bin/omarchy-cmd-screensaver`
   ...
 ```
 
+# 4. Changing logo (WIP)
+Logo for when system is locked:
+```
+/usr/share/plymouth/themes/omarchy/logo.png
+```
+
 
 
 
