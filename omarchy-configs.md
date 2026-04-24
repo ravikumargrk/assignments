@@ -115,21 +115,35 @@ So I did this in `.local/share/omarchy/bin/omarchy-cmd-screensaver`
 ```
 
 # 4. Changing logo (WIP)
-Logo for disk logon screen:
+There are the paths where images can be replaced:
+- Logo for disk logon screen:
 ```
 /usr/share/sddm/themes/omarchy/logo.svg
 ```
 
-Logo main (Reboot):
+- Logo main (Reboot or Startup image):
 ```
 /usr/share/plymouth/themes/omarchy/logo.png
 ```
-run this to update boot image:
+
+run this to update the cache after replacing:
 ```
 sudo mkinitcpio -P
 ```
 
-
+#5. Keybindings config
+In .config/hypr/bindings.conf (Or `Menu` -> `Setup` -> `Keybindings`
+```
+...
+# Overwrite existing bindings, like putting Omarchy Menu on Super + Space
+# custom by ravi
+# unbind = SUPER, 
+bindr = SUPER, SUPER_L, exec, omarchy-menu
+unbind = SUPER CTRL, L
+unbind = SUPER, L
+bindd = SUPER CTRL, L, Toggle workspace layout, exec, omarchy-hyprland-workspace-layout-toggle
+bindd = SUPER, L, Lock system, exec, omarchy-lock-screen
+```
 
 
  
