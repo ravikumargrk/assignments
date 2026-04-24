@@ -133,16 +133,28 @@ sudo mkinitcpio -P
 
 # 5. Add clock in waybar 
 In `Omarchy Menu` -> `Setup` -> `Config` -> `Waybar`<br>
-Add:
+change "clock" config:
 ```
-"tooltip": true,
-  "tooltip-format": "<tt>{calendar}</tt>",
-  "calendar": {
-    "mode": "month",
-    "mode-mon-col": 3,
-    "weeks-pos": "right",
-    "on-scroll": 1
+...
+"clock": {
+    "format": "{:L%A %H:%M}",
+    "format-alt": "{:L%d %B W%V %Y}",
+    "tooltip": true,
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "weeks-pos": "none",
+      "on-scroll": 1
+    },
+    "actions": {
+      "on-click-middle": "mode",
+      "on-scroll-up": "shift_down",
+      "on-scroll-down": "shift_up"
+    },
+    "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
   }
+...
 ```
 
 # 6. Keybindings config
