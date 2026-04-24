@@ -131,7 +131,21 @@ run this to update the cache after replacing:
 sudo mkinitcpio -P
 ```
 
-#5. Keybindings config
+#5. Add clock in waybar 
+In `Omarchy Menu` -> `Setup` -> `Config` -> `Waybar`<br>
+Add:
+```
+"tooltip": true,
+  "tooltip-format": "<tt>{calendar}</tt>",
+  "calendar": {
+    "mode": "month",
+    "mode-mon-col": 3,
+    "weeks-pos": "right",
+    "on-scroll": 1
+  }
+```
+
+#6. Keybindings config
 In .config/hypr/bindings.conf (Or `Menu` -> `Setup` -> `Keybindings`
 ```
 ...
