@@ -131,7 +131,7 @@ run this to update the cache after replacing:
 sudo mkinitcpio -P
 ```
 
-#5. Add clock in waybar 
+# 5. Add clock in waybar 
 In `Omarchy Menu` -> `Setup` -> `Config` -> `Waybar`<br>
 Add:
 ```
@@ -145,7 +145,7 @@ Add:
   }
 ```
 
-#6. Keybindings config
+# 6. Keybindings config
 In .config/hypr/bindings.conf (Or `Menu` -> `Setup` -> `Keybindings`
 ```
 ...
