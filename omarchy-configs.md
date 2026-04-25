@@ -172,6 +172,18 @@ unbind = SUPER CTRL, L
 unbind = SUPER, L
 bindd = SUPER CTRL, L, Toggle workspace layout, exec, omarchy-hyprland-workspace-layout-toggle
 bindd = SUPER, L, Lock system, exec, omarchy-lock-screen
+
+# Bluetooth is binded to SUPER CTRL, B 
+# I want it at SUPER B - which is unassigned
+# first free SUPER CTRL B
+unbind = SUPER CTRL, B
+# then bind it to SUPER B
+bindd = SUPER, B, Bluetooth controls, exec, omarchy-launch-bluetooth
+
+# Wifi is binded to SUPER CTRL W as SUPER W is close 
+# we can map it to SUPER N (Like network), which is unassigned.
+unbind = SUPER CTRL, W
+bindd = SUPER, N, Wifi controls, exec, omarchy-launch-wifi
 ```
 
 
