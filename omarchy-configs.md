@@ -106,11 +106,10 @@ So I did this in `.local/share/omarchy/bin/omarchy-cmd-screensaver`
   #  --random-effect --exclude-effects dev_worm \
   #  --no-eol --no-restore-cursor &
 
-  # Added this on 12/April/2026 for matrix effect
-  tte -i ~/.config/omarchy/branding/screensaver.txt \
-    --frame-rate 120 --canvas-width 0 --canvas-height 0 --reuse-canvas --anchor-canvas c --anchor-text c\
-    --random-effect --include-effects matrix \
-    --no-eol --no-restore-cursor &
+  # Added this on 12/April/2026 for matrix effect, line #37 is added on 25/Apr for matching colours with theme
+  tte -i ~/.config/omarchy/branding/arch.txt \
+    --frame-rate 120 --canvas-width 0 --canvas-height 0 --reuse-canvas --anchor-canvas c --anchor-text c --no-eol --no-restore-cursor\
+    matrix --rain-color-gradient 1a2a44 3c5aa6 76a1f7 --highlight-color a9c4ff --final-gradient-stops 76a1f7&
   ...
 ```
 
