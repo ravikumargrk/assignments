@@ -137,23 +137,26 @@ change "clock" config:
 ```
 ...
 "clock": {
-    "format": "{:L%A %H:%M}",
-    "format-alt": "{:L%d %B W%V %Y}",
+    "format": "{:L%a %d/%b %H:%M}",
+    //"format-alt": "{:L%d %B W%V %Y}",
     "tooltip": true,
     "tooltip-format": "<tt>{calendar}</tt>",
     "calendar": {
       "mode": "month",
       "mode-mon-col": 3,
       "weeks-pos": "none",
-      "on-scroll": 1
+      "on-scroll": 1,
+      "format":{
+        "today": "<span background='#89b4fa' color='#1e1e2e'><b>{}</b></span>"
+      }
     },
     "actions": {
-      "on-click-middle": "mode",
+      //"on-click-middle": "mode",
       "on-scroll-up": "shift_down",
       "on-scroll-down": "shift_up"
     },
     "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
-  }
+  },
 ...
 ```
 
