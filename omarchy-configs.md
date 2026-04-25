@@ -183,6 +183,10 @@ bindd = SUPER, B, Bluetooth controls, exec, omarchy-launch-bluetooth
 # we can map it to SUPER N (Like network), which is unassigned.
 unbind = SUPER CTRL, W
 bindd = SUPER, N, Wifi controls, exec, omarchy-launch-wifi
+
+# Audio settings
+unbind = SUPER CTRL, A
+bindd = SUPER, A, Audio controls, exec, omarchy-launch-audio
 ```
 
 
