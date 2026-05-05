@@ -97,7 +97,9 @@ NOTE: DID NOT DO THIS.
 
 # 3. Control Screensaver Animations
 I found the matrix effect by omarchy config with tte (text terminal effects) very cool, out of all random effects tte provides. 
-So I did this in `.local/share/omarchy/bin/omarchy-cmd-screensaver`
+So I did this in `~/.local/share/omarchy/bin/omarchy-screensaver`
+
+1. Comment out existing tte commmand:
 ```
   ...
   # Commented this out on 12/April/2026 for matrix efffect only
@@ -105,7 +107,9 @@ So I did this in `.local/share/omarchy/bin/omarchy-cmd-screensaver`
   #  --frame-rate 120 --canvas-width 0 --canvas-height 0 --reuse-canvas --anchor-canvas c --anchor-text c\
   #  --random-effect --exclude-effects dev_worm \
   #  --no-eol --no-restore-cursor &
-
+```
+Add custom tte command:
+```
   # Added this on 12/April/2026 for matrix effect, line #37 is added on 25/Apr for matching colours with theme
   tte -i ~/.config/omarchy/branding/arch.txt \
     --frame-rate 120 --canvas-width 0 --canvas-height 0 --reuse-canvas --anchor-canvas c --anchor-text c --no-eol --no-restore-cursor\
